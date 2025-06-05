@@ -200,6 +200,8 @@ const Home: React.FC = () => {
           </div>
         </div>
       </section>
+
+      {/* verse of the weeek Section */}
       <section id='verse-of-the-week-before'>
         <h2 className=' text-l font-bold text-center text-gray-800 '>
           Verse of the Week
@@ -211,6 +213,26 @@ const Home: React.FC = () => {
           <br />
           <strong>Isaiah 58:12 NKJV</strong>
         </blockquote>
+      </section>
+      {/* google mapp section*/}
+      <section className='py-20 px-6'>
+        <div className='max-w-4xl mx-auto'>
+          <h2 className='text-2xl font-bold text-center text-gray-800 mb-6'>
+            Find Us: Karama Market Location
+          </h2>
+          <div className='rounded-2xl overflow-hidden shadow-lg border border-blue-100'>
+            <iframe
+              title='Karama Market Location'
+              src='https://www.google.com/maps?q=Karama+Market,+Meru,+Kenya&output=embed'
+              width='100%'
+              height='400'
+              style={{ border: 0 }}
+              allowFullScreen={true}
+              loading='lazy'
+              referrerPolicy='no-referrer-when-downgrade'
+            ></iframe>
+          </div>
+        </div>
       </section>
     </div>
   )

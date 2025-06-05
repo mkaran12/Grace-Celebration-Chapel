@@ -1,56 +1,57 @@
-import React, { useState } from 'react';
-import Navigation from './layout/Navigation';
-import Footer from './layout/Footer';
-import Home from './components/Home';
-import About from './components/About';
-import Services from './components/Services';
-import Ministries from './components/Ministries';
-import Resources from './components/Resources';
-import Contact from './components/Contact';
-import Giving from './components/Giving';
-import './styles/animations.css';
+import { useState } from 'react'
+import Navigation from './layout/Navigation'
+import Footer from './layout/Footer'
+import Home from './components/Home'
+import About from './components/About'
+import Services from './components/Services'
+import Ministries from './components/Ministries'
+import Resources from './components/Resources'
+import Contact from './components/Contact'
+import Giving from './components/Giving'
+import './styles/animations.css'
+import ChurchBranches from './components/ChurchBranches'
 
 function App() {
-  const [activeSection, setActiveSection] = useState('home');
+  const [activeSection, setActiveSection] = useState('home')
 
   const handleNavigation = (section: string) => {
-    setActiveSection(section);
+    setActiveSection(section)
     // Scroll to top when navigating
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
 
   const renderSection = () => {
-    switch(activeSection) {
+    switch (activeSection) {
       case 'home':
-        return <Home />;
+        return <Home />
       case 'about':
-        return <About />;
+        return <About />
+      case 'church-branches':
+        return <ChurchBranches />
       case 'services':
-        return <Services />;
+        return <Services />
       case 'ministries':
-        return <Ministries />;
+        return <Ministries />
       case 'resources':
-        return <Resources />;
+        return <Resources />
       case 'contact':
-        return <Contact />;
+        return <Contact />
       case 'giving':
-        return <Giving />;
+        return <Giving />
       default:
-        return <Home />;
+        return <Home />
     }
-  };
+  }
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className='min-h-screen bg-white'>
       <Navigation activeSection={activeSection} onNavigate={handleNavigation} />
-      
-      <main className="pt-20">
-        {renderSection()}
-      </main>
+
+      <main className='pt-20'>{renderSection()}</main>
 
       <Footer onNavigate={handleNavigation} />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

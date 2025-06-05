@@ -5,12 +5,12 @@ import { Leader } from '../types'
 const About: React.FC = () => {
   const leaders: Leader[] = [
     {
-      name: 'Pastor John Smith',
+      name: 'Apostle Benson Gitonga',
       role: 'Senior Pastor',
-      years: '15 years of ministry',
+      years: '20 years of ministry',
     },
     {
-      name: 'Pastor Sarah Johnson',
+      name: 'Pastor Faith Benson',
       role: 'Associate Pastor',
       years: '10 years of ministry',
     },
@@ -30,7 +30,7 @@ const About: React.FC = () => {
           </h1>
           <p className='text-xl text-gray-600 max-w-3xl mx-auto'>
             Founded in faith, rooted in love, and committed to serving our
-            community for over 15 years.
+            community for over 20 years.
           </p>
         </div>
 

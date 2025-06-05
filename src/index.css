@@ -33,3 +33,25 @@
     @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
   }
 }
+.highlight-section {
+  background-color: #f5f5dc; /* Example: same as Verse of the Week */
+  color: #333333;            /* Example: same as Verse of the Week */
+  border-radius: 8px;
+  padding: 24px;
+  margin-bottom: 24px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.highlight-section h2 {
+  color: #2c3e50; /* Example heading color */
+}
+
+.highlight-section blockquote {
+  font-style: italic;
+  margin: 16px 0;
+}
+
+.event-details h3 {
+  margin-top: 0;
+  color: #2c3e50;
+}

@@ -22,7 +22,7 @@ const Navigation: React.FC<NavigationProps> = ({ activeSection, onNavigate }) =>
         { name: 'Church Branches', path: 'branches' },
         { name: 'Office Locations', path: 'locations' },
         { name: 'Tigania Prayer Movement', path: 'tigania-prayer' },
-        { name: 'Great Grace Chapel', path: 'grace-chapel' }
+        { name: 'Grace Celebration Chapel', path: 'grace-chapel' }
       ]
     },
     { name: 'Services', path: 'services' },
@@ -54,13 +54,13 @@ const Navigation: React.FC<NavigationProps> = ({ activeSection, onNavigate }) =>
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center space-x-4">
             <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-purple-600 rounded-full flex items-center justify-center">
-              <Heart className="w-6 h-6 text-white" />
+              <img src="" alt ="" />
             </div>
             <div>
               <h1 className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
                 GCC
               </h1>
-              <p className="text-sm text-gray-600">Grace Community Church</p>
+              <p className="text-sm text-gray-600">Grace Celebration Chapel</p>
             </div>
           </div>
           

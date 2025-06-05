@@ -73,6 +73,73 @@ const Home: React.FC = () => {
         </div>
       </section>
 
+      {/* Senior Pastor Section */}
+      <section className='py-20 px-6 bg-white'>
+        <div className='max-w-6xl mx-auto'>
+          <div className='grid md:grid-cols-2 gap-12 items-center'>
+            <div className='order-1 md:order-1'>
+              <div className='relative'>
+                <img
+                  src='/src/images/apostleandWife.png'
+                  alt='Senior Pastor'
+                  className='relative rounded-2xl object-cover w-full h-[600px] shadow-2xl transform transition-all duration-700 hover:scale-[1.05] animate-fade-in-left'
+                />
+                <div className='absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-2xl'></div>
+              </div>
+            </div>
+
+            <div className='order-2 md:order-2 flex flex-col justify-center h-[600px]'>
+              <div className='relative'>
+                <div className='absolute -top-4 -left-4 text-6xl text-blue-200 font-serif opacity-50'>
+                  "
+                </div>
+                <h2 className='text-xl md:text-2xl lg:text-3xl font-bold text-purple-900 mb-8 leading-tight animate-fade-in-right'>
+                  A Message From Apostle Benson Gitonga & Pastor Faith Benson
+                </h2>
+                <div className='text-lg text-gray-600 leading-relaxed space-y-4 animate-fade-in-up'>
+                  <p className='transform transition-all duration-500 hover:translate-x-2'>
+                    We warmly welcome you to the official website of Grace
+                    Celebration chapel led by Apostle Benson Gitonga. It is an
+                    honor to have you visit this platform, a place where we
+                    share the heart and vision of the ministry that God
+                    entrusted to us.
+                  </p>
+                  <p className='transform transition-all duration-500 hover:translate-x-2'>
+                    Since its founding in the year 2000, Grace Celebration
+                    Chapel has remained steadfast in its mission to mold
+                    believers into holistic, purpose-driven, and well-rounded
+                    disciples of Christ. Through the grace and guidance of the
+                    Holy Spirit, we are committed to equipping individuals to
+                    impact nations and generations with God's love, hope, and
+                    light.
+                  </p>
+                  <p className='transform transition-all duration-500 hover:translate-x-2'>
+                    As you explore this site, we pray that you will be
+                    encouraged, inspired, and empowered to grow deeper in your
+                    faith and fulfill the unique purpose God has placed on your
+                    life. Whether you are here to connect with us, learn more
+                    about our ministry, or find resources to strengthen your
+                    spiritual walk, we trust that you will find what you need.
+                  </p>
+                  <p className='transform transition-all duration-500 hover:translate-x-2'>
+                    May the Lord guide and bless you abundantly as you partner
+                    with us in advancing His Kingdom. Together, let us shine the
+                    light of Christ to a world in need and be the salt of the
+                    earth.
+                  </p>
+                  <p className='font-semibold text-gray-800 italic transform transition-all duration-500 hover:translate-x-2'>
+                    With blessings and love!
+                  </p>
+                </div>
+                <div className='absolute -bottom-4 -right-4 text-6xl text-blue-200 font-serif opacity-50 rotate-180'>
+                  "
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Welcome Section */}
       <section className='py-20 px-6 bg-gradient-to-r from-blue-50 to-purple-50'>
         <div className='max-w-6xl mx-auto'>
@@ -103,8 +170,8 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-      {/* Upcoming Events */}
-      <section className='py-20 px-6 bg-white'>
+      {/*  verse of the weeek Section */}
+      <section className='py-20 px-6 from-blue-500 text-center mr-auto'>
         <div className='max-w-6xl mx-auto'>
           <h2 className='text-4xl font-bold text-center text-gray-800 mb-16'>
             Upcoming Events
@@ -132,6 +199,18 @@ const Home: React.FC = () => {
             ))}
           </div>
         </div>
+      </section>
+      <section id='verse-of-the-week-before'>
+        <h2 className=' text-l font-bold text-center text-gray-800 '>
+          Verse of the Week
+        </h2>
+        <blockquote className='text-center text-lg italic text-gray-700  mx-auto'>
+          Those from among you Shall build the old waste places; You shall raise
+          up the foundations of many generations; And you shall be called the
+          Repairer of the Breach, The Restorer of Streets to Dwell In.
+          <br />
+          <strong>Isaiah 58:12 NKJV</strong>
+        </blockquote>
       </section>
     </div>
   )

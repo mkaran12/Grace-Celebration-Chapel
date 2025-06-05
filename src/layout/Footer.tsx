@@ -28,7 +28,7 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               </div>
               <div>
                 <h3 className="text-2xl font-bold">Grace Celebration Chapel</h3>
-                <p className="text-gray-300">Where faith meets community</p>
+                <p className="text-gray-300">Where God Dwells</p>
               </div>
             </div>
             <p className="text-gray-300 leading-relaxed max-w-md">
@@ -57,15 +57,15 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
             <div className="space-y-2 text-gray-300">
               <div className="flex items-center">
                 <MapPin className="w-4 h-4 mr-2" />
-                <span className="text-sm">123 Faith Street, Grace City</span>
+                <span className="text-sm">Karama, Meru  <span> Kenya </span> </span>
               </div>
               <div className="flex items-center">
                 <Phone className="w-4 h-4 mr-2" />
-                <span className="text-sm">(555) 123-4567</span>
+                <span className="text-sm">+254 712345678</span>
               </div>
               <div className="flex items-center">
                 <Mail className="w-4 h-4 mr-2" />
-                <span className="text-sm">info@gracecommunity.org</span>
+                <span className="text-sm">gracecelebrationchapel@gmail.com</span>
               </div>
             </div>
           </div>

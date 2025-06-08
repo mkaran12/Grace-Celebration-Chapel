@@ -1,5 +1,5 @@
 import React, { useMemo } from 'react'
-import { Calendar, Clock, Heart, Users, Star } from 'lucide-react'
+import { Calendar, Clock, Heart, Users, Star, Handshake } from 'lucide-react'
 import { Event, ValueItem } from '../types'
 
 const Home: React.FC = () => {
@@ -17,18 +17,18 @@ const Home: React.FC = () => {
     () => [
       {
         icon: Heart,
-        title: 'Love',
-        desc: "Experiencing God's unconditional love together",
+        title: 'God',
+        desc: 'Teaching people to love God with all their heart, soul, and mind',
       },
       {
         icon: Users,
         title: 'Community',
-        desc: 'Building meaningful relationships that last',
+        desc: 'Extending Faith to the Community',
       },
       {
-        icon: Star,
-        title: 'Purpose',
-        desc: 'Discovering your God-given calling and mission',
+        icon: Handshake,
+        title: 'Ministry',
+        desc: 'Laying down our life for our brethen(1 John 3:16)',
       },
     ],
     []
@@ -47,15 +47,19 @@ const Home: React.FC = () => {
               Grace Celebration Chapel
             </h1>
             <p className='text-xl md:text-2xl mb-8 text-blue-100 max-w-2xl mx-auto lg:mx-0 leading-relaxed'>
-              Where faith meets community, and hearts are transformed by God's
-              love
+              Where faith is in action and Grace is at work.
             </p>
             <div className='flex flex-col sm:flex-row gap-4 justify-center lg:justify-start'>
               <button className='px-8 py-4 bg-white text-blue-900 rounded-full font-semibold hover:bg-blue-50 transition-all duration-300 transform hover:scale-105 shadow-lg'>
-                Join Us Sunday
+                <a
+                  href='https://web.facebook.com/gitonga.muthamia.3'
+                  className='text-blue-900'
+                >
+                  Watch Online
+                </a>
               </button>
               <button className='px-8 py-4 border-2 border-white text-white rounded-full font-semibold hover:bg-white hover:text-blue-900 transition-all duration-300 transform hover:scale-105'>
-                Watch Online
+                Join us on Sundays
               </button>
             </div>
           </div>
@@ -170,49 +174,15 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-      {/*  verse of the weeek Section */}
+      {/*  Theme of the Year */}
       <section className='py-20 px-6 from-blue-500 text-center mr-auto'>
-        <div className='max-w-6xl mx-auto'>
-          <h2 className='text-4xl font-bold text-center text-gray-800 mb-16'>
-            Upcoming Events
-          </h2>
-          <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-6'>
-            {upcomingEvents.map((event, idx) => (
-              <div
-                key={idx}
-                className='bg-gradient-to-br from-blue-50 to-purple-50 p-6 rounded-2xl hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-blue-100'
-              >
-                <div className='flex items-center mb-4'>
-                  <Calendar className='w-6 h-6 text-blue-600 mr-3' />
-                  <span className='text-blue-600 font-semibold'>
-                    {event.date}
-                  </span>
-                </div>
-                <h3 className='text-xl font-bold text-gray-800 mb-2'>
-                  {event.title}
-                </h3>
-                <div className='flex items-center text-gray-600'>
-                  <Clock className='w-4 h-4 mr-2' />
-                  <span>{event.time}</span>
-                </div>
-              </div>
-            ))}
-          </div>
+        <div className='year'>
+          <img
+            src='/src/images/theme.jpg'
+            alt='Theme of the Year'
+            className='w-full h-[500px] object-cover rounded-2xl shadow-lg transform transition-all duration-500 hover:scale-[1.02] mb-8'
+          />
         </div>
-      </section>
-
-      {/* verse of the weeek Section */}
-      <section id='verse-of-the-week-before'>
-        <h2 className=' text-l font-bold text-center text-gray-800 '>
-          Verse of the Week
-        </h2>
-        <blockquote className='text-center text-lg italic text-gray-700  mx-auto'>
-          Those from among you Shall build the old waste places; You shall raise
-          up the foundations of many generations; And you shall be called the
-          Repairer of the Breach, The Restorer of Streets to Dwell In.
-          <br />
-          <strong>Isaiah 58:12 NKJV</strong>
-        </blockquote>
       </section>
       {/* google mapp section*/}
       <section className='py-20 px-6'>

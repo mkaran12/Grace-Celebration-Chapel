@@ -6,16 +6,21 @@ const About: React.FC = () => {
   const leaders: Leader[] = [
     {
       name: 'Apostle Benson Gitonga',
+      image: '/src/images/apostle.png',
       role: 'Senior Pastor',
       years: '20 years of ministry',
     },
     {
       name: 'Pastor Faith Benson',
+      image: '/src/images/apostleandWife.png',
+
       role: 'Associate Pastor',
       years: '10 years of ministry',
     },
     {
       name: 'David Wilson',
+      image: '/src/images/pastor3.jpg',
+
       role: 'Worship Director',
       years: '8 years of service',
     },
@@ -47,7 +52,7 @@ const About: React.FC = () => {
           <div className='order-1 lg:order-2'>
             <h2 className='text-3xl font-bold text-gray-800 mb-6'>Our Story</h2>
             <p className='text-gray-600 leading-relaxed mb-6'>
-            Grace Celebration Chapel began in 1998 with a small group of
+              Grace Celebration Chapel began in 1998 with a small group of
               families who shared a vision of creating a church where everyone
               could experience God's love and grace. What started as Sunday
               services in a local school has grown into a vibrant community of
@@ -74,16 +79,15 @@ const About: React.FC = () => {
                 Our Mission
               </h3>
               <p className='text-gray-700 leading-relaxed mb-6'>
-                To create a welcoming community where people can grow in their
-                relationship with God, connect with others, and discover their
-                purpose in life.
+                To nurture in faith the community of believers who know God,
+                express the good news of the Kingdom, transform lives and pursue
+                God’s righteousness with hope for eternal life.
               </p>
               <h3 className='text-2xl font-bold text-gray-800 mb-6'>
                 Our Vision
               </h3>
               <p className='text-gray-700 leading-relaxed'>
-                To be a church that transforms lives and communities through the
-                love of Christ, one person at a time.
+                Faith in action, Grace at work
               </p>
             </div>
           </div>
@@ -98,10 +102,9 @@ const About: React.FC = () => {
                   1
                 </span>
                 <div>
-                  <h4 className='font-bold text-gray-800'>Authentic Faith</h4>
-                  <p className='text-gray-600'>
-                    Living out our beliefs in every aspect of life
-                  </p>
+                  <h4 className='font-bold text-gray-800'>
+                    Reach people for Christ.
+                  </h4>
                 </div>
               </li>
               <li className='flex items-center gap-4'>
@@ -110,11 +113,8 @@ const About: React.FC = () => {
                 </span>
                 <div>
                   <h4 className='font-bold text-gray-800'>
-                    Inclusive Community
+                    Living by faith and prayer
                   </h4>
-                  <p className='text-gray-600'>
-                    Welcoming all people with open arms
-                  </p>
                 </div>
               </li>
               <li className='flex items-center gap-4'>
@@ -123,11 +123,8 @@ const About: React.FC = () => {
                 </span>
                 <div>
                   <h4 className='font-bold text-gray-800'>
-                    Sacrificial Service
+                    Preaching love and living in love.
                   </h4>
-                  <p className='text-gray-600'>
-                    Giving generously of our time, talents, and resources
-                  </p>
                 </div>
               </li>
               <li className='flex items-center gap-4'>
@@ -136,11 +133,8 @@ const About: React.FC = () => {
                 </span>
                 <div>
                   <h4 className='font-bold text-gray-800'>
-                    Transformative Growth
+                    God’s righteousness as revealed in Christ.
                   </h4>
-                  <p className='text-gray-600'>
-                    Continually evolving in our spiritual journey
-                  </p>
                 </div>
               </li>
             </ul>

@@ -17,7 +17,8 @@ const Navigation: React.FC<NavigationProps> = ({
   const navigationItems: NavigationItem[] = [
     { name: 'Home', path: 'home' },
     {
-      name: 'About'  
+      name: 'About',
+      path: 'about',
       subItems: [
         { name: 'Who We Are', path: 'about' },
         { name: 'Church Branches', path: 'church-branches' },
